@@ -1,11 +1,10 @@
-%global debug_package   %{nil}
+%define debug_package   %{nil}
 %define import_path     github.com/coreos/go-systemd
-%define gopath          %{_libdir}/golang
-%define gosrc			%{gopath}/src/pkg/%{import_path}
+%define gosrc		%{go_dir}/src/pkg/%{import_path}
 
 Name:           golang-go-systemd
 Version:        2
-Release:        1
+Release:        2
 Summary:        Go bindings to systemd socket activation, journal and D-BUS APIs
 License:        ASL 2.0
 URL:            http://%{import_path}
