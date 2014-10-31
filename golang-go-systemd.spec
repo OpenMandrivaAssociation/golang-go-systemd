@@ -4,13 +4,13 @@
 
 Name:           golang-go-systemd
 Version:        2
-Release:        2
+Release:        3
 Summary:        Go bindings to systemd socket activation, journal and D-BUS APIs
 License:        ASL 2.0
 URL:            http://%{import_path}
 Source0:        https://%{import_path}/archive/v%{version}.tar.gz
 Group:		Development/Other
-BuildRequires:	go-devel
+BuildRequires:	golang
 Requires:       golang
 Provides:       golang(%{import_path}) = %{version}-%{release}
 Provides:       golang(%{import_path}/activation) = %{version}-%{release}
