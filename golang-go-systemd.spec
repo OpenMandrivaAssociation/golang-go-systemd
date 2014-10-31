@@ -10,6 +10,7 @@ License:        ASL 2.0
 URL:            http://%{import_path}
 Source0:        https://%{import_path}/archive/v%{version}.tar.gz
 Group:		Development/Other
+BuildRequires:	go-devel
 Requires:       golang
 Provides:       golang(%{import_path}) = %{version}-%{release}
 Provides:       golang(%{import_path}/activation) = %{version}-%{release}
