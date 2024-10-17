@@ -7,7 +7,7 @@ Version:        2
 Release:        7
 Summary:        Go bindings to systemd socket activation, journal and D-BUS APIs
 License:        ASL 2.0
-URL:            http://%{import_path}
+URL:            https://%{import_path}
 Source0:        https://%{import_path}/archive/v%{version}.tar.gz
 Group:		Development/Other
 BuildRequires:	golang
